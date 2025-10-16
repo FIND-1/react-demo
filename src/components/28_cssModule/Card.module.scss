@@ -1,0 +1,23 @@
+// Card.module.css
+.card {
+  composes: base from '../../assets/style/theme.module.scss';
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header {
+  background: #007acc;
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  padding: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

@@ -1,0 +1,38 @@
+
+:root {
+    /* Light Theme */
+    --bg-body: #f4f4f4;
+    --bg-container: #f9f9f9;
+    --bg-box: #ffffff;
+    --text-primary: #333;
+    --border-color: #ddd;
+    --btn-bg: #fff;
+    --btn-color: #000;
+    --transition: all 0.3s ease;
+}
+
+[data-theme='dark'] {
+    /* Dark Theme */
+    --bg-body: #1a1a1a;
+    --bg-container: #121212;
+    --bg-box: #2d2d2d;
+    --text-primary: #eee;
+    --border-color: #555;
+    --btn-bg: #333;
+    --btn-color: #fff;
+}
+
+/* 全局 body 样式 */
+body {
+    margin: 0;
+    background: var(--bg-body);
+    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+    transition: var(--transition);
+}
+
+/* 可选：全局过渡效果 */
+* {
+    box-sizing: border-box;
+    transition: var(--transition);
+}

@@ -1,0 +1,16 @@
+.pointer {
+    cursor: pointer;
+    user-select: none;
+    &:hover{
+        will-change: contents;
+        color: #646cff;
+        transition: color 300ms;
+    }
+}
+.mouse-pointer{
+    cursor: pointer;
+    user-select: none;
+    will-change: contents;
+    color: #2aa835;
+    transition: color 300ms;
+}

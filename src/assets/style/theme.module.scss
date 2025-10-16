@@ -1,0 +1,133 @@
+// src/styles/theme.module.scss
+//
+// 🧩 基础样式类（通过 composes 复用）
+// 使用 @import 引入变量
+//
+
+@import './variables';
+
+/* ------------------------------
+   🧱 基础重置
+   ------------------------------ */
+
+.base {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  font-family: $font-family;
+  line-height: $line-height;
+  color: $text-light;
+
+  .dark & {
+    color: $text-dark;
+  }
+}
+
+/* ------------------------------
+   🔘 按钮基础样式
+   ------------------------------ */
+
+.button-reset {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-base {
+  @extend .text;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border: none;
+  border-radius: $border-radius;
+  font-size: $font-size-base;
+  font-weight: 500;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------------
+   🎨 主题颜色类
+   ------------------------------ */
+
+.bg-primary {
+  background-color: $color-primary;
+  color: white;
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+
+  .dark & {
+    background-color: darken($color-primary, 10%);
+    &:hover {
+      background-color: darken($color-primary, 20%);
+    }
+  }
+}
+
+.bg-secondary {
+  background-color: $color-secondary;
+  color: white;
+
+  &:hover {
+    background-color: $color-secondary-hover;
+  }
+}
+
+.bg-danger {
+  background-color: $color-danger;
+  color: white;
+
+  &:hover {
+    background-color: $color-danger-hover;
+  }
+}
+
+.bg-success {
+  background-color: $color-success;
+  color: white;
+
+  &:hover {
+    background-color: $color-success-hover;
+  }
+}
+
+/* ------------------------------
+   🧩 输入框基础
+   ------------------------------ */
+
+.input-base {
+  @extend .text;
+  padding: 10px;
+  border: 1px solid $border-light;
+  border-radius: $border-radius;
+  font-size: $font-size-base;
+
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+    box-shadow: 0 0 0 2px rgba($color-primary, 0.2);
+  }
+
+  .dark & {
+    background-color: #2d2d2d;
+    color: $text-dark;
+    border-color: $border-dark;
+  }
+}

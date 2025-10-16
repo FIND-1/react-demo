@@ -1,0 +1,47 @@
+
+/* 容器整体样式 */
+.layout-container {
+    min-height: 200vh;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    backdrop-filter: blur(6px);
+}
+
+/* 标题 */
+.layout-container h2 {
+    color: #0a2540;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.layout-container p {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* 商品卡片 */
+.item-card {
+    padding: 15px 20px;
+    margin: 12px 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* hover 动效 */
+.item-card:hover {
+    background: rgba(173, 216, 230, 0.3); /* 浅蓝 hover */
+    border-color: rgba(255, 182, 193, 0.6); /* 浅红边框 */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+/* 点击态 */
+.item-card:active {
+    background: rgba(255, 182, 193, 0.35);
+    transform: scale(0.98);
+}

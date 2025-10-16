@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body{
+    @apply bg-[#fafafa] p-5;
+}
+
+.blob-bg {
+    @apply bg-gradient-to-r from-pink-600 to-purple-600 h-screen w-screen flex justify-center items-center;
+}
+
+.blob-text {
+    @apply text-white text-4xl font-bold hover:text-gray-300 hover:cursor-pointer;
+}
+
+h2{@apply text-[#a82828] text-[1.5em] font-bold;}
+
+button {
+    @apply text-[aliceblue] rounded-lg border-0   ml-2 px-[1.2em] py-[0.6em] text-[1em] font-medium cursor-pointer bg-[#2381cb] transition-all duration-200 ease-in-out box-border;
+}
+
+input {
+    @apply border border-solid border-[#3c17cf] box-border m-0 p-0;
+}

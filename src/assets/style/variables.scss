@@ -1,0 +1,43 @@
+// src/styles/variables.scss
+//
+// 🎨 全局 SCSS 变量定义
+//
+
+// 颜色
+$color-primary: #007acc;
+$color-primary-hover: #005a9e;
+
+$color-secondary: #6c757d;
+$color-secondary-hover: #545b62;
+
+$color-danger: #d32f2f;
+$color-danger-hover: #b71c1c;
+
+$color-success: #2e7d32;
+$color-success-hover: #1b5e20;
+
+// 字体
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$font-size-base: 14px;
+$line-height: 1.5;
+
+// 圆角
+$border-radius: 6px;
+$border-radius-lg: 8px;
+$border-radius-xl: 12px;
+
+// 阴影
+$shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+$shadow: 0 2px 8px rgba(0,0,0,0.1);
+$shadow-lg: 0 10px 30px rgba(0,0,0,0.15);
+
+// 过渡
+$transition: all 0.2s ease;
+
+// 背景色（亮/暗）
+$bg-light: #ffffff;
+$bg-dark: #1a1a1a;
+$text-light: #333333;
+$text-dark: #f0f0f0;
+$border-light: #dddddd;
+$border-dark: #444444;

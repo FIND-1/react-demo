@@ -44,7 +44,7 @@ import './tailwind.css'
 // import AddDataStorageRef from "./components/17_useRef/2_AddDataStorageRef.tsx";
 // import AddTimerRef from "./components/17_useRef/3_AddTimerRef.tsx";
 
-import AddImperativeHandle18 from "./components/18_useImperativeHandle/1_AddImperativeHandle18.tsx";
+// import AddImperativeHandle18 from "./components/18_useImperativeHandle/1_AddImperativeHandle18.tsx";
 // import AddImperativeHandle19 from "./components/18_useImperativeHandle/2_AddImperativeHandle19.tsx";
 // import AddImperativeHandleFrom from "./components/18_useImperativeHandle/3_AddImperativeHandleFrom.tsx";
 // import AddContext18 from "./components/19_useContext/1_AddContext18.tsx";
@@ -60,7 +60,7 @@ import AddImperativeHandle18 from "./components/18_useImperativeHandle/1_AddImpe
 // import AddSSRNavigation from "./components/23_useId/2_AddSSRNavigation.tsx";
 
 // import AddHook from "./components/24_customHook/1_AddHook.tsx";
-import AddHOCComponent from "./components/24_customHook/2_AddHOCComponent.tsx";
+// import AddHOCComponent from "./components/24_customHook/2_AddHOCComponent.tsx";
 
 
 // import AddControlled from "./components/25_controlledComponent/1_AddControlled.tsx";
@@ -80,6 +80,15 @@ import AddHOCComponent from "./components/24_customHook/2_AddHOCComponent.tsx";
 
 // import AddCssAtomization from "./components/30_CSSAtomization/1_AddCssAtomization.tsx";
 
+// import ZustandPrice from "./pages/1_whatZustand/1_zustandPrice.tsx";
+// import ZustandAsync from "./pages/1_whatZustand/2_zustandAsync.tsx";
+// import ZustandPersist from "./pages/1_whatZustand/3_zustandPersist.tsx";
+// import ZustandSplit from "./pages/1_whatZustand/4_zustandSplit.tsx";
+
+
+// import ShallowMerge from "./pages/2_mergeZustand/1_shallowMerge.tsx";
+// import TwoDeepUpdate from "./pages/2_mergeZustand/2_twoDeepUpdate.tsx";
+import StoreWithImmer from "./pages/2_mergeZustand/3_storeWithImmer.tsx";
 
 
 //!是非空断言，告诉ts这个值不可能为空
@@ -171,7 +180,7 @@ createRoot(document.getElementById('root')!).render(
         {/*<AddDataStorageRef/>*/}
         {/*<AddTimerRef/>*/}
 
-        <AddImperativeHandle18/>
+        {/*<AddImperativeHandle18/>*/}
         {/*<AddImperativeHandle19/>*/}
         {/*<AddImperativeHandleFrom/>*/}
         {/*<AddContext18/>*/}
@@ -188,7 +197,7 @@ createRoot(document.getElementById('root')!).render(
         {/*<AddSSRNavigation />*/}
 
         {/*<AddHook />*/}
-        <AddHOCComponent/>
+        {/*<AddHOCComponent/>*/}
 
         {/*<AddControlled />*/}
         {/*<AddUncontrolled />*/}
@@ -208,5 +217,13 @@ createRoot(document.getElementById('root')!).render(
 
         {/*<AddCssAtomization/>*/}
 
+        {/*<ZustandPrice/>*/}
+        {/*<ZustandAsync/>*/}
+        {/*<ZustandPersist/>*/}
+        {/*<ZustandSplit/>*/}
+
+        {/*<ShallowMerge/>*/}
+        {/*<TwoDeepUpdate/>*/}
+        <StoreWithImmer/>
     </StrictMode>,
 );

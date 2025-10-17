@@ -88,7 +88,9 @@ import './tailwind.css'
 
 // import ShallowMerge from "./pages/2_mergeZustand/1_shallowMerge.tsx";
 // import TwoDeepUpdate from "./pages/2_mergeZustand/2_twoDeepUpdate.tsx";
-import StoreWithImmer from "./pages/2_mergeZustand/3_storeWithImmer.tsx";
+// import StoreWithImmer from "./pages/2_mergeZustand/3_storeWithImmer.tsx";
+import StorePartialize from "./pages/2_mergeZustand/4_storePartialize.tsx";
+import StateSlicing from "./pages/2_mergeZustand/5_stateSlicing.tsx";
 
 
 //!是非空断言，告诉ts这个值不可能为空
@@ -224,6 +226,8 @@ createRoot(document.getElementById('root')!).render(
 
         {/*<ShallowMerge/>*/}
         {/*<TwoDeepUpdate/>*/}
-        <StoreWithImmer/>
+        {/*<StoreWithImmer/>*/}
+        <StorePartialize/>
+        <StateSlicing/>
     </StrictMode>,
 );

@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import React,{ useState } from 'react';
 import { useUIStore } from "../../store/uiStore";
 import { useProfileStore } from "../../store/profileStore.ts";
 
-const ZustandSplit = () => {
+const ZustandSplit: React.FC = () => {
     const { sidebarOpen, toggleSidebar } = useUIStore();
     const { name, updateName } = useProfileStore();
 

@@ -45,7 +45,7 @@
     *  若使用 `zustand/persist` 进行持久化，需注意序列化数据结构
     *  如果 store 很大，应拆分为多个独立 store
     *  在 SSR（Next.js）中使用时需手动隔离客户端状态
-    *  Zustand v4++，persist 不再支持 deserialize 和 serialize，
+    *  Zustand v4+，persist 不再支持 deserialize 和 serialize，
        而是改用 storage 自定义 或 在 onRehydrateStorage 中处理迁移。
 
  
@@ -63,9 +63,10 @@
 */
 
 //3:在组件中使用
+import React from "react";
 import usePriceStore from "../../store/priceStore.ts";
 
-const ZustandPrice = () => {
+const ZustandPrice: React.FC = () => {
     const { price, incrementPrice, decrementPrice, resetPrice, getPrice } = usePriceStore();
     return (
         <div>

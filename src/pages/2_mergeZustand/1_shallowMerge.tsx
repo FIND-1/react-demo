@@ -16,9 +16,10 @@
 */
 
 // 3: 在组件中使用
+import React from "react";
 import useShallowStore from "../../store/shallowMergeStore.ts";
 
-const ShallowMerge = () => {
+const ShallowMerge: React.FC = () => {
     const { count, userInfo, updateCount, updateNameOnly } = useShallowStore();
 
     return (

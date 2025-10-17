@@ -65,8 +65,8 @@
    immer 还能用在 Zustand 的其他地方吗？
       详见: ./3_storeWithImmer.tsx
 */
-import useManualStore from '../../store/manualDeepUpdate';
-import useImmerStore from '../../store/immerDeepUpdate';
+import useManualStore from '../../store/manualDeepStore.ts';
+import useImmerStore from '../../store/immerDeepStore.ts';
 
 const TwoDeepUpdate = () => {
     // 手动更新示例

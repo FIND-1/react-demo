@@ -1,8 +1,8 @@
 // pages/UserProfilePage.tsx
-import { useState,useEffect } from 'react';
+import React, { useState,useEffect } from 'react';
 import userStoreWithImmer from "../../store/userStoreWithImmer.ts";
 
-const StoreWithImmer = () => {
+const StoreWithImmer: React.FC = () => {
     const { user, updateUserName, toggleNotifications, updateUserEmail } = userStoreWithImmer();
     const [name, setName] = useState(user.name);
     const [email, setEmail] = useState(user.email);

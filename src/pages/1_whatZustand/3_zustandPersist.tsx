@@ -74,9 +74,10 @@
 
 * */
 
+import React from "react";
 import useThemeStore from "../../store/themeStore";
 
-const ZustandPersist = () => {
+const ZustandPersist: React.FC = () => {
     const { theme, lastUpdated, toggleTheme } = useThemeStore();
 
     return (

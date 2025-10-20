@@ -11,8 +11,8 @@
       2. 可预测性：JavaScript 的展开语法（{...obj}）本身就是浅拷贝，Zustand 遵循这一语义。
       3. 鼓励扁平化状态：React 生态推荐“扁平状态结构”，避免过深嵌套（如 Redux 最佳实践）。
 
-    怎么实现深层次合并？
-     详见: ./2_normalDeepUpdate.tsx
+    怎么实现深层合并？
+     详见: ./2_twoDeepUpdate.tsx
 */
 
 // 3: 在组件中使用
@@ -24,7 +24,7 @@ const ShallowMerge: React.FC = () => {
 
     return (
         <div>
-            <h2>Zustand 浅合并演示</h2>
+            <h2>Zustand --“浅合并”</h2>
             <p>Count: {count}</p>
             <p>
                 User: {userInfo.name} | Email:{" "}

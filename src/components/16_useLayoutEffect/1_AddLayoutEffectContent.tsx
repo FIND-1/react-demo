@@ -101,7 +101,4 @@ function AddLayoutEffectContent() {
     );
 }
 
-
-
-
 export default AddLayoutEffectContent;

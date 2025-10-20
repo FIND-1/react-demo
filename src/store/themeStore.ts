@@ -22,7 +22,9 @@ const useThemeStore = create<ThemeState>()(
         {
             name: 'theme-storage', //必填项,默认存储在 localStorage
             storage: createJSONStorage(() => localStorage), // 自定义存储位置
-            // 可选：自定义序列化（通常不需要）
+            // 可选：自定义序列化（通常不需要)
+            // ,从Zustand v4++后，persist 不再支持 deserialize 和 serialize，
+            //         而是改用 storage 自定义 或 在 onRehydrateStorage 中处理迁移。
             // serialize: (state) => JSON.stringify(state),
             // deserialize: (str) => JSON.parse(str),
         }

@@ -12,7 +12,7 @@
    怎么使用:
       1. 安装依赖：npm install immer
       2. 导入：import { immer } from 'zustand/middleware/immer'
-         详见: '../../store/immerDeepUpdate'
+         详见: '../../store/immerDeepStore'
 
    原理剖析：
        *  Immer 使用 JavaScript Proxy 拦截对状态对象的“修改”操作。
@@ -63,7 +63,7 @@
        *  保持状态尽量扁平仍是首选，immer 是“复杂嵌套时的优雅退路”。
 
    immer 还能用在 Zustand 的其他地方吗？
-      详见: ./3_storeWithImmer.tsx
+       *  详见: ./3_storeWithImmer.tsx
 */
 import useManualStore from '../../store/manualDeepStore.ts';
 import useImmerStore from '../../store/immerDeepStore.ts';

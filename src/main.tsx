@@ -89,9 +89,23 @@ import './tailwind.css'
 // import ShallowMerge from "./pages/2_mergeZustand/1_shallowMerge.tsx";
 // import TwoDeepUpdate from "./pages/2_mergeZustand/2_twoDeepUpdate.tsx";
 // import StoreWithImmer from "./pages/2_mergeZustand/3_storeWithImmer.tsx";
-import StorePartialize from "./pages/2_mergeZustand/4_storePartialize.tsx";
-import StateSlicing from "./pages/2_mergeZustand/5_stateSlicing.tsx";
+// import StorePartialize from "./pages/2_mergeZustand/4_storePartialize.tsx";
+// import StateSlicing from "./pages/2_mergeZustand/5_stateSlicing.tsx";
 
+// import PersistMiddleware from "./pages/3_middlewaresZustand/1_persistMiddleware.tsx";
+// import ImmerMiddleware from "./pages/3_middlewaresZustand/2_immerMiddleware.tsx";
+// import DevtoolsMiddleware from "./pages/3_middlewaresZustand/3_devToolsMiddleware.tsx";
+// import CombinedMiddleware from "./pages/3_middlewaresZustand/4_combinedMiddleware.tsx";
+
+// import AuthProtectedDashboard from "./pages/4_whatHOC/1_authDashboard.tsx";
+// import TrackedProductDetailPage from "./pages/4_whatHOC/2_trackedProductDetail.tsx";
+
+// import UseImmerUser from "./pages/5_whatUseImmer/1_useImmerUser.tsx";
+// import UseImmerTaskList from "./pages/5_whatUseImmer/2_useImmerTaskList.tsx";
+// import UseImmerDashboard from "./pages/5_whatUseImmer/3_useImmerDashboard.tsx";
+// import UseImmerDraggable from "./pages/5_whatUseImmer/4_useImmerDraggable.tsx";
+
+import ImmerComparison from "./pages/5_whatUseImmer/5_immerComparison.tsx";
 
 //!是非空断言，告诉ts这个值不可能为空
 createRoot(document.getElementById('root')!).render(
@@ -227,7 +241,22 @@ createRoot(document.getElementById('root')!).render(
         {/*<ShallowMerge/>*/}
         {/*<TwoDeepUpdate/>*/}
         {/*<StoreWithImmer/>*/}
-        <StorePartialize/>
-        <StateSlicing/>
+        {/*<StorePartialize/>*/}
+        {/*<StateSlicing/>*/}
+
+        {/*<PersistMiddleware/>*/}
+        {/*<ImmerMiddleware/>*/}
+        {/*<DevtoolsMiddleware/>*/}
+        {/*<CombinedMiddleware/>*/}
+
+        {/*<AuthProtectedDashboard/>*/}
+        {/*<TrackedProductDetailPage/>*/}
+
+        {/*<UseImmerUser/>*/}
+        {/*<UseImmerTaskList/>*/}
+        {/*<UseImmerDashboard/>*/}
+        {/*<UseImmerDraggable/>*/}
+
+        <ImmerComparison/>
     </StrictMode>,
 );

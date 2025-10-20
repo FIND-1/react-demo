@@ -2,6 +2,7 @@
 
 body{
     @apply bg-[#fafafa] p-5;
+    padding: 0;
 }
 
 .blob-bg {

@@ -36,8 +36,7 @@
      *  当 `set()` 修改状态时，Zustand 仅通知依赖该状态的组件重新渲染
      *  实现基于浅比较（shallow compare）避免不必要重渲染
      *  没有使用 React Context，而是用外部闭包维护状态（性能更好）
-     *  从Zustand v4++后，persist 不再支持 deserialize 和 serialize，
-        而是改用 storage 自定义 或 在 onRehydrateStorage 中处理迁移。
+
 
  
   注意事项：
@@ -45,8 +44,8 @@
     *  若使用 `zustand/persist` 进行持久化，需注意序列化数据结构
     *  如果 store 很大，应拆分为多个独立 store
     *  在 SSR（Next.js）中使用时需手动隔离客户端状态
-    *  Zustand v4+，persist 不再支持 deserialize 和 serialize，
-       而是改用 storage 自定义 或 在 onRehydrateStorage 中处理迁移。
+    *  从Zustand v4++后，persist 不再支持 deserialize 和 serialize，
+        而是改用 storage 自定义 或 在 onRehydrateStorage 中处理迁移。
 
  
   使用建议：
@@ -70,7 +69,7 @@ const ZustandPrice: React.FC = () => {
     const { price, incrementPrice, decrementPrice, resetPrice, getPrice } = usePriceStore();
     return (
         <div>
-            <h2>zustand-- 增减价格</h2>
+            <h2>zustand-- 调整价格</h2>
             <p>价格: {price}</p>
             <button onClick={incrementPrice}>增加</button>
             <button onClick={decrementPrice}>减少</button>

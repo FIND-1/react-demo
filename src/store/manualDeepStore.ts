@@ -25,7 +25,7 @@ const useManualStore = create<State>((set) => ({
         },
     },
 
-    // ❌ 痛点：更新深层字段需手动展开每一层！
+    // ❌ 痛点：更新深层字段需手动展开对象嵌套的每一层！
     healOneChild: () =>
         set((state) => ({
             gourd: {

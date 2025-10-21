@@ -105,7 +105,9 @@ import './tailwind.css'
 // import UseImmerDashboard from "./pages/5_whatUseImmer/3_useImmerDashboard.tsx";
 // import UseImmerDraggable from "./pages/5_whatUseImmer/4_useImmerDraggable.tsx";
 
-import ImmerComparison from "./pages/5_whatUseImmer/5_immerComparison.tsx";
+// import ImmerComparison from "./pages/5_whatUseImmer/5_immerComparison.tsx";
+import UseStateVsUseImmer from "./pages/5_whatUseImmer/6_useStateVsUseImmer.tsx";
+import AdvancedWithReducer from "./pages/5_whatUseImmer/7_advancedWithReducer.tsx";
 
 //!是非空断言，告诉ts这个值不可能为空
 createRoot(document.getElementById('root')!).render(
@@ -257,6 +259,8 @@ createRoot(document.getElementById('root')!).render(
         {/*<UseImmerDashboard/>*/}
         {/*<UseImmerDraggable/>*/}
 
-        <ImmerComparison/>
+        {/*<ImmerComparison/>*/}
+        <UseStateVsUseImmer/>
+        <AdvancedWithReducer/>
     </StrictMode>,
 );

@@ -23,22 +23,22 @@ const initialState: State = {
 /*
 ✅ 关键点：useImmerReducer 的核心优势
 
-1. **可变写法，不可变结果**
-   在 reducer 中可以直接写 `draft.count += 1` 或 `draft.history.push(...)`，
-   而无需手动展开（...state）或使用不可变更新库。
-   → 代码更简洁、逻辑更直观，尤其适合嵌套/复杂状态。
+        1. 可变写法，不可变结果
+           在 reducer 中可以直接写 `draft.count += 1` 或 `draft.history.push(...)`，
+           而无需手动展开（...state）或使用不可变更新库。
+           → 代码更简洁、逻辑更直观，尤其适合嵌套/复杂状态。
 
-2. **集中状态逻辑**
-   所有状态变更通过 action 驱动，逻辑收拢在 reducer 内，
-   避免分散在多个 useState 的 setter 中，便于测试与维护。
+        2. 集中状态逻辑
+           所有状态变更通过 action 驱动，逻辑收拢在 reducer 内，
+           避免分散在多个 useState 的 setter 中，便于测试与维护。
 
-3. **天然支持复杂状态结构**
-   同时管理 count（number）、history（array）、isLoading（boolean）等不同类型字段，
-   无需拆分成多个 useState 或手动合并。
+        3. 天然支持复杂状态结构
+           同时管理 count（number）、history（array）、isLoading（boolean）等不同类型字段，
+           无需拆分成多个 useState 或手动合并。
 
-4. **与异步流程无缝配合**
-   可在异步操作中多次 dispatch，immer 自动合并中间状态，
-   避免 useState 的闭包陷阱（stale state）。
+        4. 与异步流程无缝配合
+           可在异步操作中多次 dispatch，immer 自动合并中间状态，
+           避免 useState 的闭包陷阱（stale state）。
 */
 
 function counterReducer(draft: State, action: Action) {
@@ -61,7 +61,7 @@ function counterReducer(draft: State, action: Action) {
     }
 }
 
-function AdvancedCounter() {
+function AdvancedWithReducer() {
     const [state, dispatch] = useImmerReducer(counterReducer, initialState);
 
     const handleIncrement = () => {
@@ -76,7 +76,7 @@ function AdvancedCounter() {
     };
 
     return (
-        <div className="p-6 max-w-md mx-auto border rounded-xl bg-white shadow">
+        <div className="p-6 max-w-4xl mx-auto border rounded-xl bg-white shadow">
             <h2 className="text-xl font-bold mb-4">useImmerReducer：复杂状态的理想选择</h2>
 
             <div className="mb-4">
@@ -110,4 +110,4 @@ function AdvancedCounter() {
     );
 }
 
-export default AdvancedCounter;
+export default AdvancedWithReducer;
